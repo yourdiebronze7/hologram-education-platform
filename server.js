@@ -6,7 +6,7 @@ const courseRoutes = require('./routes/courses');
 const app = express();
 app.use(express.json()); // Để parse JSON data
 
-mongoose.connect('mongodb://localhost/hologram-education', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hologram-education', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Kết nối đến MongoDB thành công'))
   .catch(err => console.error('Kết nối đến MongoDB thất bại', err));
 
