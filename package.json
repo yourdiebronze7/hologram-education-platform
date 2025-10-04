@@ -1,6 +1,6 @@
 {
   "name": "hologram-education-platform",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nền tảng giáo dục hologram sử dụng công nghệ blockchain.",
   "main": "index.js",
   "scripts": {
